@@ -1,0 +1,302 @@
+ /* CSS styles for a youth-friendly, attractive design [cite: 53] */
+:root {
+  --primary-color: #357EF2;
+  --secondary-color: #4ECDC4;
+  --dark-text: #2D3436;
+  --light-bg: #F7F9F9;
+  --footer-bg: #6C8280;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+/* Easy to navigate menu  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 5%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+ /* ... existing code ... */
+ .slider-container {
+   max-width: 800px;
+   margin: 2rem auto;
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ }
+
+ .slider .slide {
+   display: none;
+ }
+
+ .slider .slide.active {
+   display: block;
+ }
+
+ .slider img {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
+
+ .slider .prev, .slider .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   background-color: rgba(0,0,0,0.5);
+   border: none;
+ }
+
+ .slider .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ .slider .prev:hover, .slider .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ /* ... existing code ... */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+/* Hamburger menu for mobile responsiveness  */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--dark-text);
+  transition: all 0.3s;
+}
+
+main {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.details-list li {
+  margin-bottom: 0.5rem;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #E2E8F0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #718096;
+  margin-bottom: 2rem;
+  border: 2px dashed #CBD5E0;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: #3bbcb3;
+  transform: translateY(-2px);
+}
+
+.hashtags {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+ /* Footer Styles */
+ footer {
+   background-color: var(--footer-bg);
+   color: white;
+   text-align: center;
+   padding: 2rem 5%;
+   margin-top: 3rem;
+ }
+
+ .footer-content {
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: center;
+ }
+
+ .footer-hashtags {
+   color: var(--secondary-color);
+   font-weight: 600;
+   margin: 0.5rem 0;
+ }
+
+ .footer-links {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .footer-links a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+   color: var(--primary-color);
+ }
+
+ .snowball-message {
+   font-style: italic;
+   color: #CBD5E0;
+   margin-top: 1rem;
+ }
+
+ /* ... existing code ... */
+
+ /* Background Slider Styles */
+ .bg-slider {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+ }
+
+ .bg-slider .slide {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+ }
+
+ .bg-slider .slide.active {
+   opacity: 1;
+ }
+
+ .bg-slider .slider-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); /* Darkens the images so white text is readable */
+   z-index: 1;
+ }
+ /* ... existing code ... */

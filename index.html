@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Changemakers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Rural Changemakers Lab</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="activities.html">Daily Activities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="outcomes.html">Outcomes</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <header class="hero" style="position: relative; overflow: hidden; color: white; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+
+    <!-- Background Slider -->
+    <div class="bg-slider">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+
+      <!-- Optional: Dark overlay to make text readable -->
+      <div class="slider-overlay"></div>
+    </div>
+
+    <!-- Content that sits on top -->
+    <div class="hero-content" style="position: relative; z-index: 2;">
+      <h1>Welcome to Our Journey!</h1>
+      <p>Sharing the story of our exchange with young people everywhere! [cite: 9]</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>📍 Project Details</h2>
+    <ul class="details-list">
+      <li><strong>Project Name:</strong> Rural Changemakers</li>
+      <li><strong>Dates:</strong> 22.03.2026 - 30.03.2026</li>
+      <li><strong>Place:</strong> Bansko, Bulgaria</li>
+    </ul>
+  </section>
+
+  <div class="image-placeholder">
+    [Insert Group Photo / Project Logo Here] [cite: 26]
+  </div>
+
+  <section class="card">
+    <h2>💡 What is this project about?</h2>
+    <p>We are here to inform and empower other young people about their power as changemakers! [cite: 10] We are exploring the benefits of volunteering for personal and professional development, and how it can transform communities. [cite: 10] We also want to showcase Erasmus+ as an opportunity for all young people! [cite: 12]</p>
+  </section>
+
+  <section class="card" style="text-align: center;">
+    <h2>Spread the Word!</h2>
+    <button class="btn" onclick="sharePage()">Share Our Story</button>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 4rem; width: 100%;">
+      <div class="footer-logo-left">
+        <img src="img/AI-logo.png" alt="Left Logo Placeholder" style="max-width: 100px;">
+      </div>
+
+      <div class="footer-center" style="text-align: center;">
+        <p class="footer-hashtags">#Erasmus+ #volunteerings #YouthPower #RuralChangemakers</p>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Daily Activities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="outcomes.html">Outcomes</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-logo-right">
+        <img src="img/EN_Co-fundedbytheEU_RGB_Monochrome.png" alt="Right Logo Placeholder" style="max-width: 250px;">
+      </div>
+    </div>
+
+    <p style="font-size: 0.8rem; margin-top: 1rem;">
+      © 2026 Rural Changemakers Erasmus+ Project.
+      Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.
+    </p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
