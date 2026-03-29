@@ -59,4 +59,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000); // Changes image every 5 seconds
   }
 });
-// ... existing code ...
